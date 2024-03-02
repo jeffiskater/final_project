@@ -22,10 +22,14 @@ Install and run the code:
 You can also build the docker environment, described in env/Dockerfile, yourself, with the following commands. These commands were tested using git bash within VS Code:
 
     git clone https://github.com/jeffiskater/final_project.git
-    cd turnip
     docker run -p80:80 -p8765:8765 -v "/$(pwd -W):/source" -it klavins/enviro:alpha bash
     esm start
     enviro
+
+If you are using Windows system, using this command
+
+    winpty docker run -p80:80 -p8765:8765 -v $PWD:/source -it klavins/enviro:v1.61 bash
+    
 
 run and/or use the project
 ===
