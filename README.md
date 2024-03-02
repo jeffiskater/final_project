@@ -1,5 +1,5 @@
 Overview
-
+===
 
 This is a small project developed for the final project of EEP520 at the University of Washington. It contains a maze built with the Enviro environment and a simulated robot that uses Enviro and Elma to navigate through the constructed labyrinth. The robot uses a wall tracking routine to follow the right wall to the end of the maze. This method allows navigation through complex maze with dead ends. When the robot has completed the maze, a message is displayed in the terminal and the robot is reset.
 
@@ -19,8 +19,10 @@ Determine the end of the maze. First, I tried to use a block at the end of the m
 
 Install and run the code:
 ===
+You can also build the docker environment, described in env/Dockerfile, yourself, with the following commands. These commands were tested using git bash within VS Code:
 
-git clone https://github.com/jeffiskater/final_project.git
+    git clone https://github.com/jeffiskater/final_project.git
+    cd turnip
     docker run -p80:80 -p8765:8765 -v "/$(pwd -W):/source" -it klavins/enviro:alpha bash
     esm start
     enviro
@@ -30,6 +32,7 @@ run and/or use the project
 When you enter the "enviro" command, the project runs automatically.
 
 Sources:
+===
 - The below link from allaboutcircuits.com was used as the coneptual basis for the wall following code implemented for this project. The truth table supplied was the main resource utilized.
 https://www.allaboutcircuits.com/projects/how-to-build-a-robot-follow-walls/
 - This project uses Enviro and Elma provided through the EEP 520 course
