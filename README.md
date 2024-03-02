@@ -31,7 +31,7 @@ If you are using Windows system, using this command
     winpty docker run -p80:80 -p8765:8765 -v $PWD:/source -it klavins/enviro:v1.61 bash
     
 
-run and/or use the project
+Run and/or use the project
 ===
 When you enter the "enviro" command, the project runs automatically.
 
